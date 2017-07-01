@@ -35,7 +35,11 @@ webpackConfig.module.loaders.push({
   use: [
     {
       loader: 'file-loader',
-      options: {query: {name: 'assets/images/[name].[ext]'}}
+      options: {
+        query: {
+          name: 'assets/images/[name].[ext]'
+        }
+      }
     }
   ]
 });
