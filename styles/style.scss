@@ -1,8 +1,10 @@
 $parallaxHeight: 1000px;
+$black: #000000;
 
 body {
   padding: 0;
   margin: 0;
+  background-color: $black;
   // font-family: 'Playfair Display', serif;
   color: #fff;
 }
@@ -14,7 +16,7 @@ body {
 }
 
 .content {
-  background-color: #000000;
+  background-color: $black;
   position: relative;
   top: -100px;
   height: 2000px;
@@ -56,4 +58,8 @@ body {
 
 #layer_4 {
   background-image: url('../assets/images/parallax_layer_4.png');
+}
+
+.hidden {
+  display: none;
 }
