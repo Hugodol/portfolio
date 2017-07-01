@@ -14,6 +14,7 @@ class Parallax extends Component {
     window.addEventListener('scroll', function(event) {
       let depth, i, layer, layers, len, movement, topDistance, translate3d;
       topDistance = this.pageYOffset;
+      console.log('distance', topDistance);
       layers = document.querySelectorAll("[data-type='parallax']");
       for (i = 0, len = layers.length; i < len; i++) {
         layer = layers[i];
