@@ -1,10 +1,16 @@
 $parallaxHeight: 1000px;
 $black: #000000;
 
+@font-face {
+  font-family: ubuntuMono;
+  src: url('../assets/fonts/UbuntuMono-R.ttf');
+}
+
 body {
   padding: 0;
   margin: 0;
   background-color: $black;
+  font-family: ubuntuMono;
   color: #fff;
 }
 
@@ -59,6 +65,46 @@ body {
   background-image: url('../assets/images/parallax_layer_4.png');
 }
 
-.hidden {
-  display: none;
+.about {
+  position: absolute;
+  margin-top: 150px;
+}
+
+.portrait {
+  position: absolute;
+  padding-left: 2%;
+}
+
+.title {
+  padding-left: 12%;
+  color: yellow;
+}
+
+.about_text {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 2%;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.link_logo {
+  width: 25px;
+  height: auto;
+  padding-right: 5px;
+}
+
+.link_text {
+  display: inline;
+}
+
+.linkedin {
+  padding-left: 10%;
+}
+
+.github {
+  padding-left: 10px;
 }

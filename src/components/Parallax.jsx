@@ -11,12 +11,11 @@ class Parallax extends Component {
   }
 
   parallax() {
-    window.addEventListener('scroll', function(event) {
-      let depth, i, layer, layers, len, movement, topDistance, translate3d;
-      topDistance = this.pageYOffset;
-      console.log('distance', topDistance);
+    window.addEventListener('scroll', () =>  {
+      let depth, layer, layers, movement, topDistance, translate3d;
+      topDistance = window.pageYOffset;
       layers = document.querySelectorAll("[data-type='parallax']");
-      for (i = 0, len = layers.length; i < len; i++) {
+      for (let  i = 0; i < layers.length; i++) {
         layer = layers[i];
         depth = layer.getAttribute('data-depth');
         movement = -(topDistance * depth);
@@ -27,7 +26,7 @@ class Parallax extends Component {
         layer.style['-o-transform'] = translate3d;
         layer.style.transform = translate3d;
       }
-    });  
+    });
   }
 
   render() {

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ScrollMagic from 'scrollmagic';
+import About from './About';
 
 class Content extends Component {
   constructor() {
@@ -8,29 +8,19 @@ class Content extends Component {
   }
 
   componentDidMount() {
-    this.scrollAnimation();
+    // this.scrollAnimation();
   }
 
   scrollAnimation() {
-    const controller = new ScrollMagic.Controller();
-    new ScrollMagic.Scene({
-      duration: 100,
-      offset: 200,
-      reverse: true
-    })
-    .setClassToggle('#scrollTest', 'hidden')
-    .addTo(controller);
+    // window.addEventListener('scroll', () => {
+
+    // });
   }
 
   render() {
     return (
       <div className="content">
-        <img
-          src="https://image.ibb.co/mvzCL5/scroll_1.png"
-          alt="scroll_1"
-          id="scrollTest"
-          className="hidden"
-        />
+        <About />
       </div>
     );
   }
