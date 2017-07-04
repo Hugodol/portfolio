@@ -12,7 +12,6 @@
   "dependencies": {
     "body-parser": "^1.17.2",
     "express": "^4.15.3",
-    "gasp": "0.0.2",
     "gsap": "^1.20.2",
     "morgan": "^1.8.2",
     "react": "^15.6.1",

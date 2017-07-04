@@ -9,16 +9,6 @@ class Content extends Component {
     this.state = {};
   }
 
-  componentDidMount() {
-    // this.scrollAnimation();
-  }
-
-  scrollAnimation() {
-    // window.addEventListener('scroll', () => {
-
-    // });
-  }
-
   render() {
     return (
       <div className="content">
