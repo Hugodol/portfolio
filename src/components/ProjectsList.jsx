@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import divider from '../../assets/images/divider_projects.png';
+import divider from '../../assets/images/divider_projects_2.png';
 import ProjectEntry from './ProjectEntry';
 
 class ProjectsList extends Component {

@@ -32,7 +32,7 @@ class Parallax extends Component {
   }
 
   scrollClick() {
-    TweenLite.to(window, 1, {scrollTo: '.content'});
+    TweenLite.to(window, 1.5, {scrollTo: '.content'});
   }
 
   render() {
