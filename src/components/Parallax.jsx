@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import TweenLite from 'gsap';
+import ScrollTo from '../../node_modules/gsap/ScrollToPlugin';
 
 class Parallax extends Component {
   constructor() {
@@ -29,9 +31,13 @@ class Parallax extends Component {
     });
   }
 
+  scrollClick() {
+    TweenLite.to(window, 1, {scrollTo: '.content'});
+  }
+
   render() {
     return (
-      <div className="parallax">
+      <div className="parallax" onClick={this.scrollClick}>
         <div className="parallax_layer" id="layer_0" data-type="parallax" data-depth="0.10" />
         <div className="parallax_layer" id="layer_1" data-type="parallax" data-depth="0.20" />
         <div className="parallax_layer" id="layer_2" data-type="parallax" data-depth="0.50" />
