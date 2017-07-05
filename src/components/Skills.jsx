@@ -1,5 +1,6 @@
 import React from 'react';
-import divider from '../../assets/images/divider_skills_2.png'
+import divider from '../../assets/images/divider_skills.png'
+import '../../styles/skills.scss';
 
 const Skills = () => {
   return (

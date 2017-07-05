@@ -1,0 +1,31 @@
+$black: #000000;
+
+.content {
+  background-color: $black;
+  position: relative;
+  top: -100px;
+  height: 2000px;
+}
+
+.divider_left {
+  position: absolute;
+  padding-left: 2%;
+}
+
+.divider_right {
+  position: absolute;
+  right: 2%;
+}
+
+.title {
+  color: yellow;
+}
+
+.title_left {
+  padding-left: 12%;
+}
+
+.title_right {
+  float: right;
+  padding-right: 15%;
+}

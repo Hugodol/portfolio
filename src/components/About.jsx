@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import TweenLite from 'gsap';
 import ScrollTo from '../../node_modules/gsap/ScrollToPlugin';
-import portrait from '../../assets/images/divider_about_2.png';
+import portrait from '../../assets/images/divider_about.png';
 import linkedin from '../../assets/images/linkedin.png';
 import github from '../../assets/images/github.png';
+import '../../styles/about.scss';
 
 class About extends Component {
   constructor() {

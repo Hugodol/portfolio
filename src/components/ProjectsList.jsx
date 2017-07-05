@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import divider from '../../assets/images/divider_projects_2.png';
+import divider from '../../assets/images/divider_projects.png';
 import ProjectEntry from './ProjectEntry';
+import '../../styles/projects.scss';
 
 class ProjectsList extends Component {
   constructor() {

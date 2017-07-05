@@ -1,0 +1,14 @@
+$black: #000000;
+
+@font-face {
+  font-family: ubuntuMono;
+  src: url('../assets/fonts/UbuntuMono-R.ttf');
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: $black;
+  font-family: ubuntuMono;
+  color: #fff;
+}

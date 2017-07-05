@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import TweenLite from 'gsap';
 import ScrollTo from '../../node_modules/gsap/ScrollToPlugin';
+import '../../styles/parallax.scss';
 
 class Parallax extends Component {
   constructor() {
