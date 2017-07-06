@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import TweenLite from 'gsap';
 import ScrollTo from '../../node_modules/gsap/ScrollToPlugin';
+import NavButtons from './NavButtons';
 import '../../styles/parallax.scss';
 
 class Parallax extends Component {
@@ -33,7 +34,7 @@ class Parallax extends Component {
   }
 
   scrollClick() {
-    TweenLite.to(window, 1.5, {scrollTo: '.content'});
+    // TweenLite.to(window, 1.5, {scrollTo: '.content'});
   }
 
   render() {
@@ -45,6 +46,7 @@ class Parallax extends Component {
         <div className="parallax_layer" id="layer_name" data-type="parallax" data-depth="0.80" />
         <div className="parallax_layer" id="layer_3" data-type="parallax" data-depth="0.90" />
         <div className="parallax_layer" id="layer_4" data-type="parallax" data-depth="1.00" />
+        <NavButtons />
       </div>
     );
   }
