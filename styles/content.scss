@@ -3,18 +3,20 @@ $black: #000000;
 .content {
   background-color: $black;
   position: relative;
+  display: flex;
+  flex-direction: column;
   top: -100px;
   height: 2000px;
 }
 
 .divider_left {
   position: absolute;
-  padding-left: 2%;
+  left: 20px;
 }
 
 .divider_right {
   position: absolute;
-  right: 2%;
+  right: 20px;
 }
 
 .title {
@@ -22,10 +24,39 @@ $black: #000000;
 }
 
 .title_left {
-  padding-left: 12%;
+  position: relative;
+  left: 200px;
 }
 
 .title_right {
+  position: relative;
   float: right;
-  padding-right: 15%;
+  right: 200px;
+}
+
+@media (min-width: 1150px) {
+  .divider_medium {
+    display: none;
+  }
+  .divider_small {
+    display: none;
+  }
+}
+
+@media (max-width: 1149px) and (min-width: 810px) {
+  .divider_large {
+    display: none;
+  }
+  .divider_small {
+    display: none;
+  }
+}
+
+@media (max-width: 809px) {
+  .divider_large {
+    display: none;
+  }
+  .divider_medium {
+    display: none;
+  }
 }

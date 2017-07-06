@@ -20,25 +20,33 @@ $parallaxHeight: 1000px;
 }
 
 #layer_0 {
-  background-image: url('../assets/images/parallax_layer_0.jpg');
+  background-image: url('../assets/images/parallax/parallax_layer_0.jpg');
 }
 
 #layer_1 {
-  background-image: url('../assets/images/parallax_layer_1.png');
+  background-image: url('../assets/images/parallax/parallax_layer_1.png');
 }
 
 #layer_2 {
-  background-image: url('../assets/images/parallax_layer_2.png');
-}
-
-#layer_name {
-  background-image: url('../assets/images/parallax_name.png');
+  background-image: url('../assets/images/parallax/parallax_layer_2.png');
 }
 
 #layer_3 {
-  background-image: url('../assets/images/parallax_layer_3.png');
+  background-image: url('../assets/images/parallax/parallax_layer_3.png');
 }
 
 #layer_4 {
-  background-image: url('../assets/images/parallax_layer_4.png');
+  background-image: url('../assets/images/parallax/parallax_layer_4.png');
+}
+
+@media (min-width: 800px) {
+  #layer_name {
+    background-image: url('../assets/images/parallax/parallax_name.png');
+  }
+}
+
+@media (max-width: 799px) {
+  #layer_name {
+    background-image: url('../assets/images/parallax/parallax_name_medium.png');
+  }
 }
