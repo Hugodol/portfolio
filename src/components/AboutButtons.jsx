@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import TweenLite from 'gsap';
 import ScrollTo from '../../node_modules/gsap/ScrollToPlugin';
-import startButton from '../../assets/images/navbuttons/buttons_start.png';
-import aboutButton from '../../assets/images/navbuttons/buttons_about.png';
-import appsButton from '../../assets/images/navbuttons/buttons_apps.png';
-import skillsButton from '../../assets/images/navbuttons/buttons_skills.png';
+import menuButton from '../../assets/images/navbuttons/buttons_menu.png';
+import topButton from '../../assets/images/navbuttons/buttons_top.png';
+import appsButton from '../../assets/images/navbuttons/buttons_apps_white.png';
+import skillsButton from '../../assets/images/navbuttons/buttons_skills_white.png';
 import '../../styles/navButtons.scss';
 
-class NavButtons extends Component {
+class AboutButtons extends Component {
   constructor() {
     super();
     this.state = {
@@ -30,15 +30,15 @@ class NavButtons extends Component {
     return (
       <div className="nav_container">
         <img
-          src={startButton}
+          src={menuButton}
           className="button"
           onClick={this.show}
         />
         <img
-          src={aboutButton}
+          src={topButton}
           className={`button nav_about ${this.state.hide}`}
           onClick={() => {
-            this.scrollTo(1.5, 'about');
+            this.scrollTo(1.5, 'top');
             this.show();
           }}
         />
@@ -63,4 +63,4 @@ class NavButtons extends Component {
   }
 }
 
-export default NavButtons;
+export default AboutButtons;

@@ -1,12 +1,13 @@
 $black: #000000;
+$red: #ff0000;
+$yellow: #ffff00;
+$blue: #0000ff;
 
 .content {
   background-color: $black;
   position: relative;
-  display: flex;
-  flex-direction: column;
   top: -100px;
-  height: 2000px;
+  height: 5000px;
 }
 
 .divider_left {
@@ -20,7 +21,7 @@ $black: #000000;
 }
 
 .title {
-  color: yellow;
+  color: $yellow;
 }
 
 .title_left {

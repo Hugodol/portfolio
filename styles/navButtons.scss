@@ -1,11 +1,32 @@
 .nav_container {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 585px;
 }
 
-.nav {
+.button {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.nav_about {
   position: absolute;
+  top: -60px;
+  left: 40%;
 }
 
-.split {
-  position: relative;
+.nav_apps {
+  position: absolute;
+  top: -125px;
+}
+
+.nav_skills {
+  position: absolute;
+  top: -60px;
+  right: 40%;
 }

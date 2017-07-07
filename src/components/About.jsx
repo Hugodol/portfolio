@@ -7,6 +7,7 @@ import dividerSmall from '../../assets/images/dividers/divider_about_small.png';
 import linkedin from '../../assets/images/linkedin.png';
 import github from '../../assets/images/github.png';
 import '../../styles/about.scss';
+import AboutButtons from './AboutButtons';
 
 class About extends Component {
   constructor() {
@@ -39,6 +40,7 @@ class About extends Component {
             <div className="link_text">Github</div>
           </a>
         </div>
+        <AboutButtons />
       </div>
     );
   }

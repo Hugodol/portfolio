@@ -1,4 +1,7 @@
 $black: #000000;
+$red: #ff0000;
+$yellow: #ffff00;
+$blue: #0000ff;
 
 @font-face {
   font-family: ubuntuMono;
@@ -12,5 +15,5 @@ body {
   font-family: ubuntuMono;
   color: #fff;
   overflow-x: hidden;
-  // overflow-y: hidden;
+  overflow-y: hidden; 
 }
