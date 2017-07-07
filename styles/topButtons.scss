@@ -8,17 +8,15 @@
 
 .top_left {
   position: absolute;
-  top: -60px;
-  left: 40%;
+  transform: translate3d(-105px, -60px, 0px);
 }
 
 .top_mid {
   position: absolute;
-  top: -125px;
+  transform: translateY(-120px);
 }
 
 .top_right {
   position: absolute;
-  top: -60px;
-  right: 40%;
+  transform: translate3d(105px, -60px, 0px);
 }
