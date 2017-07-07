@@ -1,4 +1,4 @@
-.nav_container {
+.top_container {
   position: relative;
   display: flex;
   align-items: center;
@@ -6,26 +6,18 @@
   top: 585px;
 }
 
-.button {
-  cursor: pointer;
-}
-
-.hidden {
-  display: none;
-}
-
-.nav_about {
+.top_left {
   position: absolute;
   top: -60px;
   left: 40%;
 }
 
-.nav_apps {
+.top_mid {
   position: absolute;
   top: -125px;
 }
 
-.nav_skills {
+.top_right {
   position: absolute;
   top: -60px;
   right: 40%;

@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import TweenLite from 'gsap';
 import ScrollTo from '../../../node_modules/gsap/ScrollToPlugin';
-import '../../../styles/aboutButtons.scss';
+import '../../../styles/projectsButtons.scss';
 import menuButton from '../../../assets/images/navbuttons/buttons_menu.png';
-import topButton from '../../../assets/images/navbuttons/buttons_top_blue.png';
-import appsButton from '../../../assets/images/navbuttons/buttons_apps_white.png';
+import aboutButton from '../../../assets/images/navbuttons/buttons_about_white.png';
+import topButton from '../../../assets/images/navbuttons/buttons_top_yellow.png';
 import skillsButton from '../../../assets/images/navbuttons/buttons_skills_white.png';
 
-class AboutButtons extends Component {
+class ProjectsButtons extends Component {
   constructor() {
     super();
     this.state = {
@@ -28,31 +28,31 @@ class AboutButtons extends Component {
 
   render() {
     return (
-      <div className="about_container">
+      <div className="projects_container">
         <img
           src={menuButton}
           className="button"
           onClick={this.show}
         />
         <img
-          src={topButton}
-          className={`button about_left ${this.state.hide}`}
+          src={aboutButton}
+          className={`button projects_left ${this.state.hide}`}
           onClick={() => {
-            this.scrollTo(1.5, 'top');
+            this.scrollTo(1.5, 'about');
             this.show();
           }}
         />
         <img
-          src={appsButton}
-          className={`button about_mid ${this.state.hide}`}
+          src={topButton}
+          className={`button projects_mid ${this.state.hide}`}
           onClick={() => {
-            this.scrollTo(2, 'projects');
+            this.scrollTo(2, 'top');
             this.show();
           }}
         />
         <img
           src={skillsButton}
-          className={`button about_right ${this.state.hide}`}
+          className={`button projects_right ${this.state.hide}`}
           onClick={() => {
             this.scrollTo(2.5, 'skills');
             this.show();
@@ -63,4 +63,4 @@ class AboutButtons extends Component {
   }
 }
 
-export default AboutButtons;
+export default ProjectsButtons;

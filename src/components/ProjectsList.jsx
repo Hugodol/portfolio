@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import '../../styles/projects.scss';
 import dividerLarge from '../../assets/images/dividers/divider_projects_large.png';
 import dividerMedium from '../../assets/images/dividers/divider_projects_medium.png';
 import dividerSmall from '../../assets/images/dividers/divider_projects_small.png';
 import ProjectEntry from './ProjectEntry';
-import '../../styles/projects.scss';
+import ProjectsButtons from './buttons/ProjectsButtons';
 
 class ProjectsList extends Component {
   constructor() {
@@ -25,6 +26,7 @@ class ProjectsList extends Component {
             <ProjectEntry num={num} />
           )}
         </div>
+        <ProjectsButtons />
       </div>
     );
   }

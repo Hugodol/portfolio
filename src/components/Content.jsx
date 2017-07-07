@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
+import '../../styles/content.scss';
 import About from './About';
 import ProjectsList from './ProjectsList';
 import Skills from './Skills';
-import '../../styles/content.scss';
 
 class Content extends Component {
   constructor() {
