@@ -1,19 +1,19 @@
-@keyframes projects_split_left {
+@keyframes left_split_left {
   from {transform: translate3d(0px, 0px, 0px);}
   to {transform: translate3d(105px, 60px, 0px);}
 }
 
-@keyframes projects_split_mid {
+@keyframes left_split_mid {
   from {transform: translate3d(0px, 0px, 0px);}
   to {transform: translate3d(105px, -60px, 0px);}
 }
 
-@keyframes projects_split_right {
+@keyframes left_split_right {
   from {transform: translateY(0px);}
   to {transform: translateY(-120px);}
 }
 
-.projects_container {
+.left_container {
   position: relative;
   display: flex;
   align-items: flex-start;
@@ -22,23 +22,23 @@
   left: 5%;
 }
 
-.projects_left {
+.left_left {
   position: absolute;
   transform: translate3d(105px, 60px, 0px);
-  animation-name: projects_split_left;
+  animation-name: left_split_left;
   animation-duration: .4s;
 }
 
-.projects_mid {
+.left_mid {
   position: absolute;
   transform: translate3d(105px, -60px, 0px);
-  animation-name: projects_split_mid;
+  animation-name: left_split_mid;
   animation-duration: .5s;
 }
 
-.projects_right {
+.left_right {
   position: absolute;
   transform: translateY(-120px);
-  animation-name: projects_split_right;
+  animation-name: left_split_right;
   animation-duration: .6s;
 }

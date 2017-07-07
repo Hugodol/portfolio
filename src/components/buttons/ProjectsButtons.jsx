@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import TweenLite from 'gsap';
 import ScrollTo from '../../../node_modules/gsap/ScrollToPlugin';
-import '../../../styles/projectsButtons.scss';
+import '../../../styles/leftButtons.scss';
 import menuButton from '../../../assets/images/navbuttons/buttons_menu.png';
 import aboutButton from '../../../assets/images/navbuttons/buttons_about_white.png';
 import topButton from '../../../assets/images/navbuttons/buttons_top_yellow.png';
@@ -28,7 +28,7 @@ class ProjectsButtons extends Component {
 
   render() {
     return (
-      <div className="projects_container">
+      <div className="left_container">
         <img
           src={menuButton}
           className="button"
@@ -36,7 +36,7 @@ class ProjectsButtons extends Component {
         />
         <img
           src={aboutButton}
-          className={`button projects_left ${this.state.hide}`}
+          className={`button left_left ${this.state.hide}`}
           onClick={() => {
             this.scrollTo(1.5, 'about');
             this.show();
@@ -44,7 +44,7 @@ class ProjectsButtons extends Component {
         />
         <img
           src={topButton}
-          className={`button projects_mid ${this.state.hide}`}
+          className={`button left_mid ${this.state.hide}`}
           onClick={() => {
             this.scrollTo(2, 'top');
             this.show();
@@ -52,7 +52,7 @@ class ProjectsButtons extends Component {
         />
         <img
           src={skillsButton}
-          className={`button projects_right ${this.state.hide}`}
+          className={`button left_right ${this.state.hide}`}
           onClick={() => {
             this.scrollTo(2.5, 'skills');
             this.show();

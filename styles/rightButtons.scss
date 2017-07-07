@@ -1,19 +1,19 @@
-@keyframes skills_split_left {
+@keyframes right_split_left {
   from {transform: translate3d(0px, 0px, 0px);}
   to {transform: translate3d(-105px, 60px, 0px);}
 }
 
-@keyframes skills_split_mid {
+@keyframes right_split_mid {
   from {transform: translate3d(0px, 0px, 0px);}
   to {transform: translate3d(-105px, -60px, 0px);}
 }
 
-@keyframes skills_split_right {
+@keyframes right_split_right {
   from {transform: translateY(0px);}
   to {transform: translateY(-120px);}
 }
 
-.skills_container {
+.right_container {
   position: relative;
   display: flex;
   align-items: flex-end;
@@ -22,23 +22,23 @@
   right: 5%;
 }
 
-.skills_left {
+.right_left {
   position: absolute;
   transform: translate3d(-105px, 60px, 0px);
-  animation-name: skills_split_left;
+  animation-name: right_split_left;
   animation-duration: .4s;
 }
 
-.skills_mid {
+.right_mid {
   position: absolute;
   transform: translate3d(-105px, -60px, 0px);
-  animation-name: skills_split_mid;
+  animation-name: right_split_mid;
   animation-duration: .5s;
 }
 
-.skills_right {
+.right_right {
   position: absolute;
   transform: translateY(-120px);
-  animation-name: skills_split_right;
+  animation-name: right_split_right;
   animation-duration: .6s;
 }
