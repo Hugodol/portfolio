@@ -7,18 +7,19 @@ const webpackConfig = {
     filename: 'bundle.js',
   },
   module: {
-    loaders: [
-      { test: /\.js[x]?$/,
-        exclude: /node_modules/,
-        loader: 'babel-loader',
-        options: { presets: ['es2015', 'react'] }
-      },
-    ],
+    loaders: [],
   },
   resolve: {
     extensions: ['.js', '.jsx'],
   },
 };
+
+webpackConfig.module.loaders.push({
+  test: /\.js[x]?$/,
+  exclude: /node_modules/,
+  loader: 'babel-loader',
+  options: { presets: ['es2015', 'react']},
+});
 
 webpackConfig.module.loaders.push({
   test: /\.(scss|css)$/,
@@ -32,16 +33,7 @@ webpackConfig.module.loaders.push({
 
 webpackConfig.module.loaders.push({
   test: /\.(jpe?g|png|gif|svg|ico)$/i,
-  use: [
-    {
-      loader: 'file-loader',
-      options: {
-        query: {
-          name: 'assets/images/[name].[ext]'
-        }
-      }
-    }
-  ]
+  loaders : ['file-loader'],
 });
 
 module.exports = webpackConfig;
