@@ -7,7 +7,7 @@ import dividerSmall from '../../assets/images/dividers/divider_about_small.png';
 import linkedin from '../../assets/images/linkedin.png';
 import github from '../../assets/images/github.png';
 import '../../styles/about.scss';
-import AboutButtons from './AboutButtons';
+import AboutButtons from './buttons/AboutButtons';
 
 class About extends Component {
   constructor() {

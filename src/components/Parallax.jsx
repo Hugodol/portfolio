@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import NavButtons from './NavButtons';
+import TopButtons from './buttons/TopButtons';
 import '../../styles/parallax.scss';
 
 class Parallax extends Component {
@@ -40,7 +40,7 @@ class Parallax extends Component {
         <div className="parallax_layer" id="layer_name" data-type="parallax" data-depth="0.80" />
         <div className="parallax_layer" id="layer_3" data-type="parallax" data-depth="0.90" />
         <div className="parallax_layer" id="layer_4" data-type="parallax" data-depth="1.00" />
-        <NavButtons />
+        <TopButtons />
       </div>
     );
   }

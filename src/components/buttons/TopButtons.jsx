@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import TweenLite from 'gsap';
-import ScrollTo from '../../node_modules/gsap/ScrollToPlugin';
-import startButton from '../../assets/images/navbuttons/buttons_start.png';
-import aboutButton from '../../assets/images/navbuttons/buttons_about.png';
-import appsButton from '../../assets/images/navbuttons/buttons_apps.png';
-import skillsButton from '../../assets/images/navbuttons/buttons_skills.png';
-import '../../styles/navButtons.scss';
+import ScrollTo from '../../../node_modules/gsap/ScrollToPlugin';
+import startButton from '../../../assets/images/navbuttons/buttons_start.png';
+import aboutButton from '../../../assets/images/navbuttons/buttons_about.png';
+import appsButton from '../../../assets/images/navbuttons/buttons_apps.png';
+import skillsButton from '../../../assets/images/navbuttons/buttons_skills.png';
+import '../../../styles/navButtons.scss';
 
-class NavButtons extends Component {
+class TopButtons extends Component {
   constructor() {
     super();
     this.state = {
@@ -63,4 +63,4 @@ class NavButtons extends Component {
   }
 }
 
-export default NavButtons;
+export default TopButtons;
