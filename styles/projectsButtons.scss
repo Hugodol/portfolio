@@ -1,3 +1,18 @@
+@keyframes projects_split_left {
+  from {transform: translate3d(0px, 0px, 0px);}
+  to {transform: translate3d(105px, 60px, 0px);}
+}
+
+@keyframes projects_split_mid {
+  from {transform: translate3d(0px, 0px, 0px);}
+  to {transform: translate3d(105px, -60px, 0px);}
+}
+
+@keyframes projects_split_right {
+  from {transform: translateY(0px);}
+  to {transform: translateY(-120px);}
+}
+
 .projects_container {
   position: relative;
   display: flex;
@@ -9,17 +24,21 @@
 
 .projects_left {
   position: absolute;
-  bottom: -69px;
-  left: 117px;
+  transform: translate3d(105px, 60px, 0px);
+  animation-name: projects_split_left;
+  animation-duration: .4s;
 }
 
 .projects_mid {
   position: absolute;
-  bottom: 69px;
-  left: 117px;
+  transform: translate3d(105px, -60px, 0px);
+  animation-name: projects_split_mid;
+  animation-duration: .5s;
 }
 
 .projects_right {
   position: absolute;
-  bottom: 135px;
+  transform: translateY(-120px);
+  animation-name: projects_split_right;
+  animation-duration: .6s;
 }
