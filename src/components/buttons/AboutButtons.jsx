@@ -36,7 +36,7 @@ class AboutButtons extends Component {
         />
         <img
           src={topButton}
-          className={`button right_left ${this.state.hide}`}
+          className={`button right_top ${this.state.hide}`}
           onClick={() => {
             this.scrollTo(1.5, 'top');
             this.show();
@@ -52,7 +52,7 @@ class AboutButtons extends Component {
         />
         <img
           src={skillsButton}
-          className={`button right_right ${this.state.hide}`}
+          className={`button right_bottom ${this.state.hide}`}
           onClick={() => {
             this.scrollTo(2.5, 'skills');
             this.show();

@@ -35,24 +35,24 @@ class ProjectsButtons extends Component {
           onClick={this.show}
         />
         <img
-          src={aboutButton}
-          className={`button left_left ${this.state.hide}`}
-          onClick={() => {
-            this.scrollTo(1.5, 'about');
-            this.show();
-          }}
-        />
-        <img
           src={topButton}
-          className={`button left_mid ${this.state.hide}`}
+          className={`button left_top ${this.state.hide}`}
           onClick={() => {
             this.scrollTo(2, 'top');
             this.show();
           }}
         />
         <img
+          src={aboutButton}
+          className={`button left_mid ${this.state.hide}`}
+          onClick={() => {
+            this.scrollTo(1.5, 'about');
+            this.show();
+          }}
+        />
+        <img
           src={skillsButton}
-          className={`button left_right ${this.state.hide}`}
+          className={`button left_bottom ${this.state.hide}`}
           onClick={() => {
             this.scrollTo(2.5, 'skills');
             this.show();

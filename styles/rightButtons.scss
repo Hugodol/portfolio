@@ -1,6 +1,6 @@
-@keyframes right_split_left {
-  from {transform: translate3d(0px, 0px, 0px);}
-  to {transform: translate3d(-105px, 60px, 0px);}
+@keyframes right_split_top {
+  from {transform: translateY(0px);}
+  to {transform: translateY(-120px);}
 }
 
 @keyframes right_split_mid {
@@ -8,9 +8,9 @@
   to {transform: translate3d(-105px, -60px, 0px);}
 }
 
-@keyframes right_split_right {
-  from {transform: translateY(0px);}
-  to {transform: translateY(-120px);}
+@keyframes right_split_bottom {
+  from {transform: translate3d(0px, 0px, 0px);}
+  to {transform: translate3d(-105px, 60px, 0px);}
 }
 
 .right_container {
@@ -22,11 +22,11 @@
   right: 5%;
 }
 
-.right_left {
+.right_top {
   position: absolute;
-  transform: translate3d(-105px, 60px, 0px);
-  animation-name: right_split_left;
-  animation-duration: .4s;
+  transform: translateY(-120px);
+  animation-name: right_split_top;
+  animation-duration: .6s;
 }
 
 .right_mid {
@@ -36,9 +36,9 @@
   animation-duration: .5s;
 }
 
-.right_right {
+.right_bottom {
   position: absolute;
-  transform: translateY(-120px);
-  animation-name: right_split_right;
-  animation-duration: .6s;
+  transform: translate3d(-105px, 60px, 0px);
+  animation-name: right_split_bottom;
+  animation-duration: .4s;
 }
