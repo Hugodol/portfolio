@@ -17,12 +17,12 @@ class ProjectEntry extends Component {
 
   render() {
     return (
-      <div className="project" id={this.props.name}>
+      <a href={this.props.url} target="_blank" title={this.props.name} className="project" id={this.props.name}>
         <div className="projectName">
           {this.props.name}
         </div>
         <img className="projectLogo" src={this.props.logo} />
-      </div>
+      </a>
     );
   }
 }

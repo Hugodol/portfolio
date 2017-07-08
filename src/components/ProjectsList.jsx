@@ -14,9 +14,24 @@ class ProjectsList extends Component {
     super();
     this.state = {
       projects: [
-        {name: 'cloudMix', logo: cloudMix, background: 'http://wallpapercave.com/wp/OLrPvT4.jpg'},
-        {name: 'roBodoget 2.0', logo: robodget, background: 'https://img06.deviantart.net/6326/i/2010/032/9/b/deep_space_nebula_by_hameed.jpg'},
-        {name: 'foodtrac', logo: foodtrac, background: 'https://images8.alphacoders.com/768/768202.jpg'},
+        {
+          name: 'cloudMix',
+          logo: cloudMix,
+          background: 'http://wallpapercave.com/wp/OLrPvT4.jpg',
+          url: 'https://cloud-mix.herokuapp.com/',
+        },
+        {
+          name: 'roBodoget 2.0',
+          logo: robodget,
+          background: 'https://img06.deviantart.net/6326/i/2010/032/9/b/deep_space_nebula_by_hameed.jpg',
+          url: 'https://robodget.herokuapp.com/',
+        },
+        {
+          name: 'foodtrac',
+          logo: foodtrac,
+          background: 'https://images8.alphacoders.com/768/768202.jpg',
+          url: 'https://foodtrac.me',
+        },
       ],
     };
   }
@@ -27,10 +42,16 @@ class ProjectsList extends Component {
         <img src={dividerLarge} className="divider_right divider_large" />
         <img src={dividerMedium} className="divider_right divider_medium" />
         <img src={dividerSmall} className="divider_right divider_small" />
-        <h3 className="title_right title">my apps</h3>
+        <h1 className="title_right title">my apps</h1>
         <div className="projects_list">
-          {this.state.projects.map(project =>
-            <ProjectEntry name={project.name} logo={project.logo} background={project.background} />
+          {this.state.projects.map((project, i) =>
+            <ProjectEntry
+              key={i}
+              name={project.name}
+              logo={project.logo}
+              background={project.background}
+              url={project.url}
+            />
           )}
         </div>
         <ProjectsButtons />

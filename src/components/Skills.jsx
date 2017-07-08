@@ -11,7 +11,7 @@ const Skills = () => {
       <img src={dividerLarge} className="divider_left divider_large" />
       <img src={dividerMedium} className="divider_left divider_medium" />
       <img src={dividerSmall} className="divider_left divider_small" />
-      <h3 className="title_left title">skills</h3>
+      <h1 className="title_left title">skills</h1>
       <SkillsButtons />
     </div>
   );
