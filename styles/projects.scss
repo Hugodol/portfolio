@@ -1,9 +1,29 @@
+$yellow: #ffff00;
+
 .projects {
   padding-top: 100px;
   height: 100vh;
 }
 
 .projects_list {
-  padding-top: 8%;
-  text-align: center;
+  position: relative;
+  top: 140px;
+  display: flex;
+  flex-flow: row; 
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project {
+  width: 45%;
+  margin: 15px;
+  height: 200px;
+  background-color: red;
+  border: solid;
+  background-image: url('https://img06.deviantart.net/6326/i/2010/032/9/b/deep_space_nebula_by_hameed.jpg');
+}
+
+.projectName {
+  padding: 10px;
+  color: $yellow;
 }

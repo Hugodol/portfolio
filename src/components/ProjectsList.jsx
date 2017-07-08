@@ -10,7 +10,11 @@ class ProjectsList extends Component {
   constructor() {
     super();
     this.state = {
-      temp: [1,2,3,4],
+      projects: [
+        {name: 'cloudMix'},
+        {name: 'foodtrac'},
+        {name: 'roBodoget 2.0'},
+      ],
     };
   }
 
@@ -22,8 +26,8 @@ class ProjectsList extends Component {
         <img src={dividerSmall} className="divider_right divider_small" />
         <h3 className="title_right title">my apps</h3>
         <div className="projects_list">
-          {this.state.temp.map(num =>
-            <ProjectEntry num={num} />
+          {this.state.projects.map(project =>
+            <ProjectEntry name={project.name} />
           )}
         </div>
         <ProjectsButtons />

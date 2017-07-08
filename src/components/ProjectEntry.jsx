@@ -2,8 +2,10 @@ import React from 'react';
 
 const ProjectEntry = (props) => {
   return (
-    <div>
-      Project {props.num}
+    <div className="project">
+      <div className="projectName">
+        {props.name}
+      </div>
     </div>
   );
 };
