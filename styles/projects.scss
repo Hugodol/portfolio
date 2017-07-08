@@ -15,15 +15,26 @@ $yellow: #ffff00;
 }
 
 .project {
+  display: flex;
   width: 45%;
   margin: 15px;
   height: 200px;
   background-color: red;
   border: solid;
-  background-image: url('https://img06.deviantart.net/6326/i/2010/032/9/b/deep_space_nebula_by_hameed.jpg');
+  // background-image: url('https://img06.deviantart.net/6326/i/2010/032/9/b/deep_space_nebula_by_hameed.jpg');
+  // background-image: url('http://www.discoverthebluedot.com/gfx/stages_3.jpg');
 }
 
 .projectName {
+  flex: 1;
   padding: 10px;
   color: $yellow;
+}
+
+.projectLogo {
+  flex: .5;
+  width: 25%;
+  padding-right: 8%;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
