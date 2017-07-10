@@ -18,7 +18,7 @@ webpackConfig.module.loaders.push({
   test: /\.js[x]?$/,
   exclude: /node_modules/,
   loader: 'babel-loader',
-  options: { presets: ['es2015', 'react']},
+  options: { presets: ['es2015', 'react'] },
 });
 
 webpackConfig.module.loaders.push({
@@ -33,7 +33,7 @@ webpackConfig.module.loaders.push({
 
 webpackConfig.module.loaders.push({
   test: /\.(jpe?g|png|gif|svg|ico)$/i,
-  loaders : ['file-loader'],
+  loaders: ['file-loader'],
 });
 
 module.exports = webpackConfig;

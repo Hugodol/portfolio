@@ -3,7 +3,7 @@ import '../../styles/projects.scss';
 import dividerLarge from '../../assets/images/dividers/divider_projects_large.png';
 import dividerMedium from '../../assets/images/dividers/divider_projects_medium.png';
 import dividerSmall from '../../assets/images/dividers/divider_projects_small.png';
-import myProjects from '../my_projects.js';
+import myProjects from '../my_projects';
 import ProjectEntry from './ProjectEntry';
 import ProjectsButtons from './buttons/ProjectsButtons';
 
@@ -18,25 +18,25 @@ class ProjectsList extends Component {
   render() {
     return (
       <div className="projects">
-        <img src={dividerLarge} className="divider_right divider_large" />
-        <img src={dividerMedium} className="divider_right divider_medium" />
-        <img src={dividerSmall} className="divider_right divider_small" />
+        <img src={dividerLarge} className="divider_right divider_large" alt="" />
+        <img src={dividerMedium} className="divider_right divider_medium" alt="" />
+        <img src={dividerSmall} className="divider_right divider_small" alt="" />
         <h1 className="title_right title">my apps</h1>
         <div className="projects_list">
-          {this.state.projects.map((project, i) =>
-            <ProjectEntry
-              key={i}
+          {this.state.projects.map(project =>
+            (<ProjectEntry
+              key={project.id}
               name={project.name}
               logo={project.logo}
               background={project.background}
               url={project.url}
-            />
+            />),
           )}
         </div>
         <ProjectsButtons />
       </div>
     );
   }
-};
+}
 
 export default ProjectsList;

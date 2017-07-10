@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import TweenLite from 'gsap';
-import ScrollTo from '../../../node_modules/gsap/ScrollToPlugin';
 import '../../../styles/rightButtons.scss';
 import menuButton from '../../../assets/images/navbuttons/buttons_menu.png';
 import topButton from '../../../assets/images/navbuttons/buttons_top_blue.png';
@@ -17,12 +16,12 @@ class AboutButtons extends Component {
   }
 
   scrollTo(speed, elem) {
-    TweenLite.to(window, speed, {scrollTo: `.${elem}`});
+    TweenLite.to(window, speed, { scrollTo: `.${elem}` });
   }
 
   show() {
-    this.state.hide === ''
-      ? this.setState({ hide: 'hidden'})
+    this.state.hide === '' // eslint-disable-line no-unused-expressions
+      ? this.setState({ hide: 'hidden' })
       : this.setState({ hide: '' });
   }
 
@@ -31,11 +30,13 @@ class AboutButtons extends Component {
       <div className="right_container">
         <img
           src={menuButton}
+          alt=""
           className="button"
           onClick={this.show}
         />
         <img
           src={topButton}
+          alt=""
           className={`button right_top ${this.state.hide}`}
           onClick={() => {
             this.scrollTo(1.5, 'top');
@@ -44,6 +45,7 @@ class AboutButtons extends Component {
         />
         <img
           src={appsButton}
+          alt=""
           className={`button right_mid ${this.state.hide}`}
           onClick={() => {
             this.scrollTo(2, 'projects');
@@ -52,6 +54,7 @@ class AboutButtons extends Component {
         />
         <img
           src={skillsButton}
+          alt=""
           className={`button right_bottom ${this.state.hide}`}
           onClick={() => {
             this.scrollTo(2.5, 'skills');
