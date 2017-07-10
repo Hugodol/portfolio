@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import TweenLite from 'gsap';
+import '../../../node_modules/gsap/ScrollToPlugin';
 import '../../../styles/topButtons.scss';
 import startButton from '../../../assets/images/navbuttons/buttons_start.png';
 import aboutButton from '../../../assets/images/navbuttons/buttons_about.png';
