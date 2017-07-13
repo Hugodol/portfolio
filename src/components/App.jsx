@@ -40,7 +40,7 @@ class App extends Component {
     });
 
     window.addEventListener('resize', ({ target }) => {
-      if (target.innerWidth > 809) {
+      if (target.innerWidth > 1080) {
         if (position >= 0 && position < 900) {
           TweenLite.to(window, 1.5, { scrollTo: '.top' });
         }
