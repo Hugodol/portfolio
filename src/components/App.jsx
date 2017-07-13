@@ -13,8 +13,15 @@ class App extends Component {
   }
 
   componentDidMount() {
+    this.initSize();
     this.resize();
     this.autoScroll();
+  }
+
+  initSize() {
+    window.innerWidth <= 1080
+      ? this.setState({ mobile: true })
+      : this.setState({ mobile: false });
   }
 
   resize() {
