@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import '../../styles/projects.scss';
 import dividerLarge from '../../assets/images/dividers/divider_projects_large.png';
 import dividerMedium from '../../assets/images/dividers/divider_projects_medium.png';
@@ -33,10 +34,17 @@ class ProjectsList extends Component {
             />),
           )}
         </div>
-        <ProjectsButtons />
+        {!this.props.mobile
+          ? <ProjectsButtons />
+          : null
+        }
       </div>
     );
   }
 }
+
+ProjectsList.propTypes = {
+  mobile: PropTypes.bool.isRequired,
+};
 
 export default ProjectsList;

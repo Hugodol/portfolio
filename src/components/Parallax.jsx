@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import TopButtons from './buttons/TopButtons';
+import PropTypes from 'prop-types';
 import '../../styles/parallax.scss';
+import TopButtons from './buttons/TopButtons';
 
 class Parallax extends Component {
   constructor() {
@@ -43,10 +44,17 @@ class Parallax extends Component {
         <div className="parallax_layer" id="layer_name" data-type="parallax" data-depth="0.80" />
         <div className="parallax_layer" id="layer_3" data-type="parallax" data-depth="0.90" />
         <div className="parallax_layer" id="layer_4" data-type="parallax" data-depth="1.00" />
-        <TopButtons />
+        {!this.props.mobile
+          ? <TopButtons />
+          : null
+        }
       </div>
     );
   }
 }
+
+Parallax.propTypes = {
+  mobile: PropTypes.bool.isRequired,
+};
 
 export default Parallax;

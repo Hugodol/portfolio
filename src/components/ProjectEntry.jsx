@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PropType from 'prop-types';
+import PropTypes from 'prop-types';
 
 class ProjectEntry extends Component {
   constructor() {
@@ -29,10 +29,10 @@ class ProjectEntry extends Component {
 }
 
 ProjectEntry.propTypes = {
-  name: PropType.string.isRequired,
-  background: PropType.string.isRequired,
-  url: PropType.string.isRequired,
-  logo: PropType.string.isRequired,
+  name: PropTypes.string.isRequired,
+  background: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
+  logo: PropTypes.string.isRequired,
 };
 
 export default ProjectEntry;

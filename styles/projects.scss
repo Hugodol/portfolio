@@ -43,7 +43,7 @@ $yellow: #ffff00;
 
 .projectLogo {
   transition: transform .7s;
-  width: 220px;
+  width: 200px;
   height: auto;
   padding: 10px;
   padding-right: 45px;
@@ -54,8 +54,8 @@ $yellow: #ffff00;
 }
 
 .project:hover .projectLogo {
-  animation-name: rotation;
-  animation-duration: .7s;
-  animation-timing-function: ease-out;
-  transform: rotate(45deg);
+  // animation-name: rotation;
+  // animation-duration: .7s;
+  // animation-timing-function: ease-out;
+  // transform: rotate(45deg);
 }

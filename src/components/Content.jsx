@@ -1,24 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import '../../styles/content.scss';
 import About from './About';
 import ProjectsList from './ProjectsList';
 import Skills from './Skills';
 
-class Content extends Component {
-  constructor() {
-    super();
-    this.state = {};
-  }
+const Content = props => (
+  <div className="content">
+    <About mobile={props.mobile} />
+    <ProjectsList mobile={props.mobile} />
+    <Skills mobile={props.mobile} />
+  </div>
+);
 
-  render() {
-    return (
-      <div className="content">
-        <About />
-        <ProjectsList />
-        <Skills />
-      </div>
-    );
-  }
-}
+Content.propTypes = {
+  mobile: PropTypes.bool.isRequired,
+};
 
 export default Content;
