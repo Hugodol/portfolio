@@ -1,13 +1,13 @@
 $yellow: #ffff00;
 
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(45deg);
-  }
-}
+// @keyframes rotation {
+//   from {
+//     transform: rotate(0deg);
+//   }
+//   to {
+//     transform: rotate(45deg);
+//   }
+// }
 
 .projects {
   padding-top: 100px;
@@ -42,7 +42,7 @@ $yellow: #ffff00;
 }
 
 .projectLogo {
-  transition: transform .7s;
+  // transition: transform .7s;
   width: 200px;
   height: auto;
   padding: 10px;
@@ -53,14 +53,18 @@ $yellow: #ffff00;
   color: red;
 }
 
-.project:hover .projectLogo {
+// .project:hover .projectLogo {
   // animation-name: rotation;
   // animation-duration: .7s;
   // animation-timing-function: ease-out;
   // transform: rotate(45deg);
-}
+// }
 
 @media (max-width: 1080px) {
+  .projects {
+    height: auto;
+    padding-bottom: 200px;
+  }
   .project {
     width: 100%;
   }
