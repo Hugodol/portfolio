@@ -19,7 +19,7 @@ class App extends Component {
 
   resize() {
     window.addEventListener('resize', ({ target }) => {
-      target.innerWidth < 810
+      target.innerWidth <= 1080
         ? this.setState({ mobile: true })
         : this.setState({ mobile: false });
     });
