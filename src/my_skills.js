@@ -34,4 +34,19 @@ export default [
     skill: 'React.js',
     logo: 'https://www.gitbook.com/cover/book/mongkuen/react.jpg?build=1470682429235',
   },
+  {
+    id: 8,
+    skill: 'Angular.js',
+    logo: 'https://avatars0.githubusercontent.com/u/139426?v=3&s=400',
+  },
+  {
+    id: 9,
+    skill: 'MySQL',
+    logo: 'http://www.myw0.com/wp-content/uploads/2010/10/mysql.png',
+  },
+  {
+    id: 10,
+    skill: 'Git',
+    logo: 'https://image.spreadshirtmedia.com/image-server/v1/compositions/1013562493/views/1,width=300,height=300,appearanceId=2,backgroundColor=E8E8E8,version=1485256808/git-logo-icon-t-shirt-men-s-t-shirt.jpg',
+  },
 ];

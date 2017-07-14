@@ -5,8 +5,8 @@
 
 .mySkills {
   position: relative;
-  top: 70px;
-  left: 80px;
+  top: 155px;
+  left: 150px;
   width: 80%;
   display: flex;
   flex-flow: row; 
@@ -16,6 +16,7 @@
 
 .skill {
   display: flex;
+  width: 170px;
   margin: 15px;
   justify-content: center;
   align-items: center;
@@ -27,14 +28,25 @@
 }
 
 .skillName {
-  // color: yellow;
   font-size: x-large;
   padding-left: 15px;
+}
+
+@media (max-width: 1250px) {
+  .skill {
+    justify-content: flex-start;
+  }
 }
 
 @media (max-width: 1080px) {
   .skills {
     height: auto;
     padding-bottom: 200px;
+  }
+}
+
+@media (max-width: 809px) {
+  .mySkills {
+    left: 80px;
   }
 }
