@@ -41,16 +41,13 @@ class App extends Component {
 
     window.addEventListener('resize', ({ target }) => {
       if (target.innerWidth > 1080) {
-        if (position >= 0 && position < 900) {
+        if (position < 900) {
           TweenLite.to(window, 1.5, { scrollTo: '.top' });
-        }
-        if (position >= 900 && position < 1950) {
+        } else if (position < 1950) {
           TweenLite.to(window, 1.5, { scrollTo: '.about' });
-        }
-        if (position >= 1950 && position < 3000) {
+        } else if (position < 3000) {
           TweenLite.to(window, 1.5, { scrollTo: '.projects' });
-        }
-        if (position >= 3000) {
+        } else {
           TweenLite.to(window, 1.5, { scrollTo: '.skills' });
         }
       }
