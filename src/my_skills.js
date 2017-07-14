@@ -47,6 +47,6 @@ export default [
   {
     id: 10,
     skill: 'Git',
-    logo: 'https://image.spreadshirtmedia.com/image-server/v1/compositions/1013562493/views/1,width=300,height=300,appearanceId=2,backgroundColor=E8E8E8,version=1485256808/git-logo-icon-t-shirt-men-s-t-shirt.jpg',
+    logo: 'http://thoughtram.io/assets/images/git-logo-white.png',
   },
 ];
