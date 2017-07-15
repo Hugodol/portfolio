@@ -31,3 +31,10 @@ body {
     overflow-x: hidden;
   }
 }
+
+@media (max-height: 650px) {
+  body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+}

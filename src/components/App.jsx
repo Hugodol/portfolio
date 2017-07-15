@@ -19,14 +19,14 @@ class App extends Component {
   }
 
   initSize() {
-    window.innerWidth <= 1080
+    window.innerWidth <= 1080 || window.innerHeight <= 650
       ? this.setState({ mobile: true })
       : this.setState({ mobile: false });
   }
 
   resize() {
     window.addEventListener('resize', ({ target }) => {
-      target.innerWidth <= 1080
+      target.innerWidth <= 1080 || window.innerHeight <= 650
         ? this.setState({ mobile: true })
         : this.setState({ mobile: false });
     });
@@ -36,7 +36,7 @@ class App extends Component {
     let position;
 
     window.addEventListener('scroll', () => {
-      position = window.pageYOffset;
+      position = window.pageYOffset + (window.innerHeight / 2);
     });
 
     window.addEventListener('resize', ({ target }) => {

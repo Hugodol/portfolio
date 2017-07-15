@@ -1,4 +1,5 @@
 $yellow: #ffff00;
+$red: #ff0000;
 
 // @keyframes rotation {
 //   from {
@@ -50,7 +51,7 @@ $yellow: #ffff00;
 }
 
 .project:hover {
-  color: red;
+  color: $red;
 }
 
 // .project:hover .projectLogo {

@@ -42,3 +42,9 @@
   animation-name: left_split_bottom;
   animation-duration: .4s;
 }
+
+@media (max-height: 840px) {
+  .left_container {
+    top: 8%;
+  }
+}
