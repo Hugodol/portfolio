@@ -32,7 +32,7 @@ webpackConfig.module.loaders.push({
 });
 
 webpackConfig.module.loaders.push({
-  test: /\.(jpe?g|png|gif|svg|ico)$/i,
+  test: /\.(jpe?g|png|gif|svg|ico|mp3)$/i,
   loaders: ['file-loader'],
 });
 
