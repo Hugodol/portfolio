@@ -26,7 +26,7 @@ class App extends Component {
 
   resize() {
     window.addEventListener('resize', ({ target }) => {
-      target.innerWidth <= 1080 || window.innerHeight <= 650
+      target.innerWidth <= 1080 || target.innerHeight <= 650
         ? this.setState({ mobile: true })
         : this.setState({ mobile: false });
     });

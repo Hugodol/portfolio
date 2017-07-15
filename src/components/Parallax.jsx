@@ -6,11 +6,26 @@ import TopButtons from './buttons/TopButtons';
 class Parallax extends Component {
   constructor() {
     super();
-    this.state = {};
+    this.state = {
+      mobileCover: false,
+    };
   }
 
   componentDidMount() {
     this.parallax();
+    this.switchToMobile();
+  }
+
+  switchToMobile() {
+    window.innerWidth <= 430
+      ? this.setState({ mobileCover: true })
+      : this.setState({ mobileCover: false });
+
+    window.addEventListener('resize', ({ target }) => {
+      target.innerWidth <= 430
+        ? this.setState({ mobileCover: true })
+        : this.setState({ mobileCover: false });
+    });
   }
 
   parallax() {
@@ -36,20 +51,20 @@ class Parallax extends Component {
   }
 
   render() {
-    return (
-      <div className="parallax">
-        <div className="parallax_layer" id="layer_0" data-type="parallax" data-depth="0.10" />
-        <div className="parallax_layer" id="layer_1" data-type="parallax" data-depth="0.20" />
-        <div className="parallax_layer" id="layer_2" data-type="parallax" data-depth="0.50" />
-        <div className="parallax_layer" id="layer_name" data-type="parallax" data-depth="0.80" />
-        <div className="parallax_layer" id="layer_3" data-type="parallax" data-depth="0.90" />
-        <div className="parallax_layer" id="layer_4" data-type="parallax" data-depth="1.00" />
-        {!this.props.mobile
-          ? <TopButtons />
-          : null
-        }
-      </div>
-    );
+    return !this.state.mobileCover
+        ? (<div className="parallax">
+          <div className="parallax_layer" id="layer_0" data-type="parallax" data-depth="0.10" />
+          <div className="parallax_layer" id="layer_1" data-type="parallax" data-depth="0.20" />
+          <div className="parallax_layer" id="layer_2" data-type="parallax" data-depth="0.50" />
+          <div className="parallax_layer" id="layer_name" data-type="parallax" data-depth="0.80" />
+          <div className="parallax_layer" id="layer_3" data-type="parallax" data-depth="0.90" />
+          <div className="parallax_layer" id="layer_4" data-type="parallax" data-depth="1.00" />
+          {!this.props.mobile
+              ? <TopButtons />
+              : null
+            }
+        </div>)
+        : (<div className="mobileCover" />);
   }
 }
 
