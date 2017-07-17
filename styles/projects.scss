@@ -1,15 +1,6 @@
 $yellow: #ffff00;
 $red: #ff0000;
 
-// @keyframes rotation {
-//   from {
-//     transform: rotate(0deg);
-//   }
-//   to {
-//     transform: rotate(45deg);
-//   }
-// }
-
 .projects {
   padding-top: 100px;
   height: 100vh;
@@ -43,7 +34,6 @@ $red: #ff0000;
 }
 
 .projectLogo {
-  // transition: transform .7s;
   width: 200px;
   height: auto;
   padding: 10px;
@@ -53,13 +43,6 @@ $red: #ff0000;
 .project:hover {
   color: $red;
 }
-
-// .project:hover .projectLogo {
-  // animation-name: rotation;
-  // animation-duration: .7s;
-  // animation-timing-function: ease-out;
-  // transform: rotate(45deg);
-// }
 
 @media (max-width: 1080px) {
   .projects {
@@ -71,7 +54,6 @@ $red: #ff0000;
   }
 }
 
-// @media (max-width: 570px) {
 @media (max-width: 809px) {
   .projects_list {
     display: inline-block;
