@@ -4,6 +4,7 @@ import '../../styles/about.scss';
 import dividerLarge from '../../assets/images/dividers/divider_about_large.png';
 import dividerMedium from '../../assets/images/dividers/divider_about_medium.png';
 import dividerSmall from '../../assets/images/dividers/divider_about_small.png';
+import dividerXSmall from '../../assets/images/dividers/divider_about_x-small.png';
 import linkedin from '../../assets/images/linkedin.png';
 import github from '../../assets/images/github.png';
 import AboutButtons from './buttons/AboutButtons';
@@ -13,6 +14,7 @@ const About = props => (
     <img src={dividerLarge} className="divider_left divider_large" alt="" />
     <img src={dividerMedium} className="divider_left divider_medium" alt="" />
     <img src={dividerSmall} className="divider_left divider_small" alt="" />
+    <img src={dividerXSmall} className="divider_left divider_x-small" alt="" />
     <h1 className="title_left title">about me</h1>
     <div className="about_text">
           Consectetur adipiscing elit. Nam quis risus congue, cursus lacus ac, sollicitudin massa. Cras pellentesque purus sem, elementum nulla sagittis sit amet. Sed blandit congue augue, ut feugiat elit faucibus non. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris porttitor enim vitae nisi porta sodales in in erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque imperdiet lorem vitae tempor euismod. Curabitur sit amet purus vel risus posuere commodo. Curabitur pretium orci velit, eu condimentum massa rhoncus quis.

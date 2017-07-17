@@ -42,6 +42,9 @@ $blue: #0000ff;
   .divider_small {
     display: none;
   }
+  .divider_x-small {
+    display: none;
+  }
 }
 
 @media (max-width: 1149px) and (min-width: 810px) {
@@ -51,13 +54,37 @@ $blue: #0000ff;
   .divider_small {
     display: none;
   }
+  .divider_x-small {
+    display: none;
+  }
 }
 
-@media (max-width: 809px) {
+@media (max-width: 809px) and (min-width: 575px) {
   .divider_large {
     display: none;
   }
   .divider_medium {
+    display: none;
+  }
+  .divider_x-small {
+    display: none;
+  }
+  .title_left {
+    left: 155px;
+  }
+  .title_right {
+    right: 125px;
+  }
+}
+
+@media (max-width: 574px) {
+  .divider_large {
+    display: none;
+  }
+  .divider_medium {
+    display: none;
+  }
+  .divider_small {
     display: none;
   }
   .title_left {
