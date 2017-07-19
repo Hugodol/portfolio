@@ -1,4 +1,4 @@
-const aboutText = `Consectetur adipiscing elit. Nam quis risus congue, cursus lacus ac, sollicitudin massa. Cras pellentesque purus sem, elementum nulla sagittis sit amet.\n
+const aboutText = `Hi, my name is Hugo Dolemieux, a Los Angeles based fullstack engineer with a preference for Front-End developing.\n
  Sed blandit congue augue, ut feugiat elit faucibus non. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.\n
  Mauris porttitor enim vitae nisi porta sodales in in erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.\n
  Pellentesque imperdiet lorem vitae tempor euismod. Curabitur sit amet purus vel risus posuere commodo. Curabitur pretium orci velit, eu condimentum massa rhoncus quis.\n

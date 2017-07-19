@@ -50,3 +50,13 @@ export default [
     logo: 'http://thoughtram.io/assets/images/git-logo-white.png',
   },
 ];
+
+// split skills in 3 parts
+  // DEVELOPMENT
+    // JS, CSS, HTML, React. ...
+
+  // DESIGN
+    // Photoshop. Pro Tools, ...
+
+  // TOOLS
+    // Git, postman, ...
