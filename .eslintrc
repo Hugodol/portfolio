@@ -7,7 +7,7 @@
     ],
   "rules": {
     // "no-console": 0,
-    "max-len": ["error", 800],
+    "max-len": ["error", 200],
     // "react/no-string-refs": 0,
     // "dot-notation": 0,
     "no-plusplus": 0,
