@@ -20,8 +20,8 @@ class TopButtons extends Component {
 
   scrollTo(speed, elem) {
     // const scrollSFX = new Howl({
-      // src: [scrollSound],
-      // volume: 0.5,
+    //   src: [scrollSound],
+    //   volume: 0.5,
     // });
     // scrollSFX.play();
     TweenLite.to(window, speed, { scrollTo: `.${elem}` });

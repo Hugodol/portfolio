@@ -15,6 +15,7 @@ $blue: #0000ff;
   top: 70px;
   left: 150px;
   width: 80%;
+  font-size: 25px;
 }
 
 .scroll {
@@ -25,7 +26,7 @@ $blue: #0000ff;
 
 .links {
   position: relative;
-  width: 220px;
+  width: 245px;
   left: 160px;
   bottom: -95px;
 }
@@ -43,6 +44,8 @@ $blue: #0000ff;
 
 .link_text {
   display: inline;
+  font-size: 20px;
+  margin-left: 10px;
 }
 
 .github {

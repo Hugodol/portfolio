@@ -23,11 +23,11 @@ const About = props => (
     <div className="links">
       <a href="https://www.linkedin.com/in/hugodolemieux/" className="linkedin link" target="_blank" rel="noopener noreferrer" title="Hugo Dolemieux's LinkedIn">
         <img src={linkedin} className="link_logo" alt="" />
-        <div className="link_text">LinkedIn</div>
+        <div className="link_text">linkedIn</div>
       </a>
       <a href="https://github.com/Hugodol/" className="github link" target="_blank" rel="noopener noreferrer" title="Hugo Dolemieux's Github">
         <img src={github} className="link_logo" alt="" />
-        <div className="link_text">Github</div>
+        <div className="link_text">github</div>
       </a>
     </div>
     {!props.mobile
