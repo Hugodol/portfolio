@@ -3,9 +3,34 @@
   height: 100vh;
 }
 
-.mySkills {
+.dev {
+  position: relative;
+  top: 99px;
+  left: 160px;
+  font-size: 40px;
+}
+
+.mySkillsDev {
   position: relative;
   top: 155px;
+  left: 150px;
+  width: 80%;
+  display: flex;
+  flex-flow: row; 
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.design {
+  position: relative;
+  left: 160px;
+  top: 210px;
+  font-size: 40px;
+}
+
+.mySkillsDesign {
+  position: relative;
+  top: 250px;
   left: 150px;
   width: 80%;
   display: flex;
@@ -46,7 +71,19 @@
 }
 
 @media (max-width: 809px) {
-  .mySkills {
+  .mySkillsDev {
     left: 45px;
+  }
+  .mySkillsDesign {
+    left: 45px;
+  }
+}
+
+@media (max-width: 575px) {
+  .dev {
+    left: 60px;
+  }
+  .design {
+    left: 60px;
   }
 }

@@ -5,7 +5,8 @@ import dividerLarge from '../../assets/images/dividers/divider_skills_large.png'
 import dividerMedium from '../../assets/images/dividers/divider_skills_medium.png';
 import dividerSmall from '../../assets/images/dividers/divider_skills_small.png';
 import dividerXSmall from '../../assets/images/dividers/divider_skills_x-small.png';
-import mySkills from '../my_skills';
+import myDevSkills from '../my_dev_skills';
+import myDesignSkills from '../my_design_skills';
 import SkillEntry from './SkillEntry';
 import SkillsButtons from './buttons/SkillsButtons';
 
@@ -13,7 +14,8 @@ class Skills extends Component {
   constructor() {
     super();
     this.state = {
-      skills: mySkills,
+      devSkills: myDevSkills,
+      designSkills: myDesignSkills,
     };
   }
 
@@ -25,8 +27,19 @@ class Skills extends Component {
         <img src={dividerSmall} className="divider_left divider_small" alt="" />
         <img src={dividerXSmall} className="divider_left divider_x-small" alt="" />
         <h1 className="title_left title">skills</h1>
-        <div className="mySkills">
-          {this.state.skills.map(skill => (
+        <div className="dev">DEVELOPMENT</div>
+        <div className="mySkillsDev">
+          {this.state.devSkills.map(skill => (
+            <SkillEntry
+              key={skill.id}
+              logo={skill.logo}
+              skill={skill.skill}
+            />
+          ))}
+        </div>
+        <div className="design">DESIGN</div>
+        <div className="mySkillsDesign">
+          {this.state.designSkills.map(skill => (
             <SkillEntry
               key={skill.id}
               logo={skill.logo}
