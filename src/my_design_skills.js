@@ -9,4 +9,9 @@ export default [
     skill: 'ProTools',
     logo: 'http://siteassets.pagecloud.com/shortfilmstuff/images/protools-ID-cac94648-86ea-4769-b7e1-3393c37cd2de.png?nocache=f64e5426-735d-4084-cf1a-a31b601cbe73',
   },
+  {
+    id: 3,
+    skill: 'Maya',
+    logo: 'http://area.autodesk.com/area_v2/assets/img/product/autodesk-maya.png',
+  },
 ];
