@@ -42,7 +42,7 @@ export default [
   {
     id: 9,
     skill: 'webRTC',
-    logo: 'https://webrtc.org/assets/images/webrtc-logo-vert-retro-255x305.png',
+    logo: 'https://s3-us-west-1.amazonaws.com/hugodolportfolio/webrtc_logo.png',
   },
   {
     id: 10,
