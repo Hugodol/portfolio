@@ -5,7 +5,7 @@
   "author": "Hugo Dolemieux",
   "license": "ISC",
   "scripts": {
-    "start": "node server/index.js",
+    "start": "sudo node server/index.js",
     "dev": "nodemon server/index.js",
     "compile": "webpack -w",
     "prod": "webpack --optimize-minimize",
