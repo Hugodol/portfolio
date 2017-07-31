@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import '../../styles/projects.scss';
-import dividerLarge from '../../assets/images/dividers/divider_projects_large.png';
-import dividerMedium from '../../assets/images/dividers/divider_projects_medium.png';
-import dividerSmall from '../../assets/images/dividers/divider_projects_small.png';
-import dividerXSmall from '../../assets/images/dividers/divider_projects_x-small.png';
 import myProjects from '../my_projects';
 import ProjectEntry from './ProjectEntry';
 import ProjectsButtons from './buttons/ProjectsButtons';
+
+const dividerLarge = 'https://s3-us-west-1.amazonaws.com/hugodolportfolio/dividers/divider_projects_large.png';
+const dividerMedium = 'https://s3-us-west-1.amazonaws.com/hugodolportfolio/dividers/divider_projects_medium.png';
+const dividerSmall = 'https://s3-us-west-1.amazonaws.com/hugodolportfolio/dividers/divider_projects_small.png';
+const dividerXSmall = 'https://s3-us-west-1.amazonaws.com/hugodolportfolio/dividers/divider_projects_x-small.png';
 
 class ProjectsList extends Component {
   constructor() {

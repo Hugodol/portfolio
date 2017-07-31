@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import '../../styles/skills.scss';
-import dividerLarge from '../../assets/images/dividers/divider_skills_large.png';
-import dividerMedium from '../../assets/images/dividers/divider_skills_medium.png';
-import dividerSmall from '../../assets/images/dividers/divider_skills_small.png';
-import dividerXSmall from '../../assets/images/dividers/divider_skills_x-small.png';
 import myDevSkills from '../my_dev_skills';
 import myDesignSkills from '../my_design_skills';
 import SkillEntry from './SkillEntry';
 import SkillsButtons from './buttons/SkillsButtons';
+
+const dividerLarge = 'https://s3-us-west-1.amazonaws.com/hugodolportfolio/dividers/divider_skills_large.png';
+const dividerMedium = 'https://s3-us-west-1.amazonaws.com/hugodolportfolio/dividers/divider_skills_medium.png';
+const dividerSmall = 'https://s3-us-west-1.amazonaws.com/hugodolportfolio/dividers/divider_skills_small.png';
+const dividerXSmall = 'https://s3-us-west-1.amazonaws.com/hugodolportfolio/dividers/divider_skills_x-small.png';
 
 class Skills extends Component {
   constructor() {

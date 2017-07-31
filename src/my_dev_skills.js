@@ -41,11 +41,16 @@ export default [
   },
   {
     id: 9,
+    skill: 'webRTC',
+    logo: 'https://webrtc.org/assets/images/webrtc-logo-vert-retro-255x305.png',
+  },
+  {
+    id: 10,
     skill: 'MySQL',
     logo: 'http://www.myw0.com/wp-content/uploads/2010/10/mysql.png',
   },
   {
-    id: 10,
+    id: 11,
     skill: 'Git',
     logo: 'http://thoughtram.io/assets/images/git-logo-white.png',
   },

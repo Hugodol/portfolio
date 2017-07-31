@@ -1,14 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import '../../styles/about.scss';
-import dividerLarge from '../../assets/images/dividers/divider_about_large.png';
-import dividerMedium from '../../assets/images/dividers/divider_about_medium.png';
-import dividerSmall from '../../assets/images/dividers/divider_about_small.png';
-import dividerXSmall from '../../assets/images/dividers/divider_about_x-small.png';
-import linkedin from '../../assets/images/linkedin.png';
-import github from '../../assets/images/github.png';
 import aboutText from '../about';
 import AboutButtons from './buttons/AboutButtons';
+
+const dividerLarge = 'https://s3-us-west-1.amazonaws.com/hugodolportfolio/dividers/divider_about_large.png';
+const dividerMedium = 'https://s3-us-west-1.amazonaws.com/hugodolportfolio/dividers/divider_about_medium.png';
+const dividerSmall = 'https://s3-us-west-1.amazonaws.com/hugodolportfolio/dividers/divider_about_small.png';
+const dividerXSmall = 'https://s3-us-west-1.amazonaws.com/hugodolportfolio/dividers/divider_about_x-small.png';
+const linkedin = 'https://s3-us-west-1.amazonaws.com/hugodolportfolio/linkedin.png';
+const github = 'https://s3-us-west-1.amazonaws.com/hugodolportfolio/github.png';
 
 const About = props => (
   <div className="about" id="about">

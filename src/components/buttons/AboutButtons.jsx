@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 import TweenLite from 'gsap';
 import '../../../node_modules/gsap/ScrollToPlugin';
 import '../../../styles/rightButtons.scss';
-import menuButton from '../../../assets/images/navbuttons/buttons_menu.png';
-import topButton from '../../../assets/images/navbuttons/buttons_top_blue.png';
-import appsButton from '../../../assets/images/navbuttons/buttons_apps_white.png';
-import skillsButton from '../../../assets/images/navbuttons/buttons_skills_white.png';
+
+const menuButton = 'https://s3-us-west-1.amazonaws.com/hugodolportfolio/navbuttons/buttons_menu.png';
+const topButton = 'https://s3-us-west-1.amazonaws.com/hugodolportfolio/navbuttons/buttons_top_blue.png';
+const appsButton = 'https://s3-us-west-1.amazonaws.com/hugodolportfolio/navbuttons/buttons_apps_white.png';
+const skillsButton = 'https://s3-us-west-1.amazonaws.com/hugodolportfolio/navbuttons/buttons_skills_white.png';
 
 class AboutButtons extends Component {
   constructor() {

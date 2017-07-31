@@ -6,8 +6,8 @@
   "license": "ISC",
   "scripts": {
     "start": "npm run dev:nodemon | npm run dev:webpack",
-    "dev:webpack": "webpack -w",
-    "dev:nodemon": "nodemon server/index.js",
+    "compile": "webpack -w",
+    "dev": "nodemon server/index.js",
     "lint-staged": "lint-staged"
   },
   "pre-commit": [
