@@ -5,10 +5,10 @@
   "author": "Hugo Dolemieux",
   "license": "ISC",
   "scripts": {
-    "start": "npm run dev:nodemon | npm run dev:webpack",
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js",
     "compile": "webpack -w",
     "prod": "webpack --optimize-minimize",
-    "dev": "nodemon server/index.js",
     "lint-staged": "lint-staged"
   },
   "pre-commit": [
