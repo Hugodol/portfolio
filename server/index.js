@@ -10,7 +10,7 @@ app.use(morgan('dev'));
 
 app.use(express.static(path.join(__dirname, '../static')));
 
-const port = 80;
+const port = 3000;
 
 app.listen(port, () => {
   console.log('node listening on port', port);

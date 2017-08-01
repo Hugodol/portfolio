@@ -19,14 +19,14 @@ class App extends Component {
   }
 
   initSize() {
-    window.innerWidth <= 1080 || window.innerHeight <= 650
+    window.innerWidth <= 1080 || window.innerHeight <= 730
       ? this.setState({ mobile: true })
       : this.setState({ mobile: false });
   }
 
   resize() {
     window.addEventListener('resize', ({ target }) => {
-      target.innerWidth <= 1080 || target.innerHeight <= 650
+      target.innerWidth <= 1080 || target.innerHeight <= 730
         ? this.setState({ mobile: true })
         : this.setState({ mobile: false });
     });

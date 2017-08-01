@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import '../../styles/skills.scss';
-import myDevSkills from '../my_dev_skills';
-import myDesignSkills from '../my_design_skills';
+import myDevSkills from '../../data/my_dev_skills';
+import myDesignSkills from '../../data/my_design_skills';
 import SkillEntry from './SkillEntry';
 import SkillsButtons from './buttons/SkillsButtons';
 

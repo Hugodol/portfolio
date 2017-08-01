@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import '../../styles/projects.scss';
-import myProjects from '../my_projects';
+import myProjects from '../../data/my_projects';
 import ProjectEntry from './ProjectEntry';
 import ProjectsButtons from './buttons/ProjectsButtons';
 

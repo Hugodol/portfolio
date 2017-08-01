@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import '../../styles/about.scss';
-import aboutText from '../about';
+import aboutText from '../../data/about';
 import AboutButtons from './buttons/AboutButtons';
 
 const dividerLarge = 'https://s3-us-west-1.amazonaws.com/hugodolportfolio/dividers/divider_about_large.png';

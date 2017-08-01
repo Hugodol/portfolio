@@ -42,3 +42,9 @@
   animation-name: right_split_bottom;
   animation-duration: .4s;
 }
+
+@media (max-height: 910px) {
+  .right_container {
+    top: 8%;
+  }
+}
