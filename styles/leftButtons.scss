@@ -48,3 +48,9 @@
     top: 8%;
   }
 }
+
+@media (max-height: 700px) {
+  .left_container {
+    top: -5%;
+  }
+}

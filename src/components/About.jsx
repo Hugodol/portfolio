@@ -19,7 +19,13 @@ const About = props => (
     <img src={dividerXSmall} className="divider_left divider_x-small" alt="" />
     <h1 className="title_left title">about me</h1>
     <div className="about_text">
-      {aboutText}
+      {aboutText.paragraph1}
+      <br />
+      <br />
+      {aboutText.paragraph2}
+      <br />
+      <br />
+      {aboutText.paragraph3}
     </div>
     <div className="links">
       <a href="https://www.linkedin.com/in/hugodolemieux/" className="linkedin link" target="_blank" rel="noopener noreferrer" title="Hugo Dolemieux's LinkedIn">
