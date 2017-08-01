@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const parser = require('body-parser');
 const morgan = require('morgan');
@@ -10,7 +11,7 @@ app.use(morgan('dev'));
 
 app.use(express.static(path.join(__dirname, '../static')));
 
-const port = 80;
+const port = process.env.DEV === 'development' ? 3000 : 80;
 
 app.listen(port, () => {
   console.log('node listening on port', port);
