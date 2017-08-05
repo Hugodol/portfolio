@@ -15,7 +15,12 @@
 
 @keyframes split_skills {
   from {transform: translate3d(-130px, 0px, 0px);}
-  to {transform: translate3d(80px, 120px, 0px);;}
+  to {transform: translate3d(80px, 120px, 0px);}
+}
+
+@keyframes split_music {
+  from {transform: translate3d(-130px, 0px, 0px);}
+  to {transform: translate3d(185px, 60px, 0px);}
 }
 
 .menu {
@@ -55,6 +60,14 @@
   transform: translate3d(80px, 120px, 0px);
   animation-name: split_skills;
   animation-duration: .8s;
+}
+
+.menuMusic {
+  z-index: 1;
+  position: fixed;
+  transform: translate3d(185px, 60px, 0px);
+  animation-name: split_music;
+  animation-duration: .9s;
 }
 
 @media (max-width: 430px) {

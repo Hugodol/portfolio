@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import TweenLite from 'gsap';
 import '../../node_modules/gsap/ScrollToPlugin';
 import '../../styles/menu.scss';
@@ -9,7 +10,7 @@ const aboutButton = 'https://s3-us-west-1.amazonaws.com/hugodolportfolio/navbutt
 const appsButton = 'https://s3-us-west-1.amazonaws.com/hugodolportfolio/navbuttons/menu_apps.png';
 const skillsButton = 'https://s3-us-west-1.amazonaws.com/hugodolportfolio/navbuttons/menu_skills.png';
 
-class ProjectsButtons extends Component {
+class Menu extends Component {
   constructor() {
     super();
     this.state = {
@@ -73,9 +74,23 @@ class ProjectsButtons extends Component {
             this.show();
           }}
         />
+        <img
+          src={this.props.playUrl}
+          alt=""
+          className={`button menuMusic ${this.state.hide}`}
+          onClick={() => {
+            this.props.handlePlay();
+            // this.show();
+          }}
+        />
       </div>
     );
   }
 }
 
-export default ProjectsButtons;
+Menu.propTypes = {
+  handlePlay: PropTypes.func.isRequired,
+  playUrl: PropTypes.string.isRequired,
+};
+
+export default Menu;
