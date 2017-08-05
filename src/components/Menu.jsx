@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import TweenLite from 'gsap';
-import '../../../node_modules/gsap/ScrollToPlugin';
-import '../../../styles/topButtons.scss';
+import '../../node_modules/gsap/ScrollToPlugin';
+import '../../styles/menu.scss';
 
-const startButton = 'https://s3-us-west-1.amazonaws.com/hugodolportfolio/navbuttons/buttons_start.png';
-const aboutButton = 'https://s3-us-west-1.amazonaws.com/hugodolportfolio/navbuttons/buttons_about.png';
-const appsButton = 'https://s3-us-west-1.amazonaws.com/hugodolportfolio/navbuttons/buttons_apps.png';
-const skillsButton = 'https://s3-us-west-1.amazonaws.com/hugodolportfolio/navbuttons/buttons_skills.png';
+const menuButton = 'https://s3-us-west-1.amazonaws.com/hugodolportfolio/navbuttons/buttons_menu.png';
+const aboutButton = 'https://s3-us-west-1.amazonaws.com/hugodolportfolio/navbuttons/buttons_about_white.png';
+const topButton = 'https://s3-us-west-1.amazonaws.com/hugodolportfolio/navbuttons/buttons_top_yellow.png';
+const skillsButton = 'https://s3-us-west-1.amazonaws.com/hugodolportfolio/navbuttons/buttons_skills_white.png';
 
-class TopButtons extends Component {
+class ProjectsButtons extends Component {
   constructor() {
     super();
     this.state = {
@@ -18,6 +18,7 @@ class TopButtons extends Component {
   }
 
   scrollTo(speed, elem) {
+    console.log('in scroll to');
     TweenLite.to(window, speed, { scrollTo: `.${elem}` });
   }
 
@@ -29,35 +30,35 @@ class TopButtons extends Component {
 
   render() {
     return (
-      <div className="top_container">
+      <div className="menu">
         <img
-          src={startButton}
+          src={menuButton}
           alt=""
           className="button"
           onClick={this.show}
         />
         <img
+          src={topButton}
+          alt=""
+          className={`button menuTop ${this.state.hide}`}
+          onClick={() => {
+            this.scrollTo(2, 'top');
+            this.show();
+          }}
+        />
+        <img
           src={aboutButton}
           alt=""
-          className={`button top_left ${this.state.hide}`}
+          className={`button menuAbout ${this.state.hide}`}
           onClick={() => {
             this.scrollTo(1.5, 'about');
             this.show();
           }}
         />
         <img
-          src={appsButton}
-          alt=""
-          className={`button top_mid ${this.state.hide}`}
-          onClick={() => {
-            this.scrollTo(2, 'projects');
-            this.show();
-          }}
-        />
-        <img
           src={skillsButton}
           alt=""
-          className={`button top_right ${this.state.hide}`}
+          className={`button menuApps ${this.state.hide}`}
           onClick={() => {
             this.scrollTo(2.5, 'skills');
             this.show();
@@ -68,4 +69,4 @@ class TopButtons extends Component {
   }
 }
 
-export default TopButtons;
+export default ProjectsButtons;

@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import '../../styles/projects.scss';
 import myProjects from '../../data/my_projects';
 import ProjectEntry from './ProjectEntry';
-import ProjectsButtons from './buttons/ProjectsButtons';
 
 const dividerLarge = 'https://s3-us-west-1.amazonaws.com/hugodolportfolio/dividers/divider_projects_large.png';
 const dividerMedium = 'https://s3-us-west-1.amazonaws.com/hugodolportfolio/dividers/divider_projects_medium.png';
@@ -37,17 +35,9 @@ class ProjectsList extends Component {
             />),
           )}
         </div>
-        {!this.props.mobile
-          ? <ProjectsButtons />
-          : null
-        }
       </div>
     );
   }
 }
-
-ProjectsList.propTypes = {
-  mobile: PropTypes.bool.isRequired,
-};
 
 export default ProjectsList;

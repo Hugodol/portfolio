@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import '../../styles/skills.scss';
 import myDevSkills from '../../data/my_dev_skills';
 import myDesignSkills from '../../data/my_design_skills';
 import SkillEntry from './SkillEntry';
-import SkillsButtons from './buttons/SkillsButtons';
 
 const dividerLarge = 'https://s3-us-west-1.amazonaws.com/hugodolportfolio/dividers/divider_skills_large.png';
 const dividerMedium = 'https://s3-us-west-1.amazonaws.com/hugodolportfolio/dividers/divider_skills_medium.png';
@@ -48,18 +46,9 @@ class Skills extends Component {
             />
           ))}
         </div>
-        {!this.props.mobile
-          ? <SkillsButtons />
-          : null
-        }
       </div>
     );
   }
 }
-
-Skills.propTypes = {
-  mobile: PropTypes.bool.isRequired,
-};
-
 
 export default Skills;

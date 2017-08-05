@@ -1,8 +1,6 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import '../../styles/about.scss';
 import aboutText from '../../data/about';
-import AboutButtons from './buttons/AboutButtons';
 
 const dividerLarge = 'https://s3-us-west-1.amazonaws.com/hugodolportfolio/dividers/divider_about_large.png';
 const dividerMedium = 'https://s3-us-west-1.amazonaws.com/hugodolportfolio/dividers/divider_about_medium.png';
@@ -11,7 +9,7 @@ const dividerXSmall = 'https://s3-us-west-1.amazonaws.com/hugodolportfolio/divid
 const linkedin = 'https://s3-us-west-1.amazonaws.com/hugodolportfolio/linkedin.png';
 const github = 'https://s3-us-west-1.amazonaws.com/hugodolportfolio/github.png';
 
-const About = props => (
+const About = () => (
   <div className="about" id="about">
     <img src={dividerLarge} className="divider_left divider_large" alt="" />
     <img src={dividerMedium} className="divider_left divider_medium" alt="" />
@@ -37,15 +35,7 @@ const About = props => (
         <div className="link_text">github</div>
       </a>
     </div>
-    {!props.mobile
-      ? <AboutButtons />
-      : null
-    }
   </div>
 );
-
-About.propTypes = {
-  mobile: PropTypes.bool.isRequired,
-};
 
 export default About;
