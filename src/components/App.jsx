@@ -20,14 +20,16 @@ class App extends Component {
   }
 
   initMusic() {
-    const song = new Howl({
-      src: ['https://s3-us-west-1.amazonaws.com/hugodolportfolio/audio/backgroundSong.mp3'],
-      loop: true,
-      volume: 0.5,
-      html5: true,
-    });
-    this.setState({ song });
-    song.once('load', () => song.play());
+    if (window.innerWidth > 430) {
+      const song = new Howl({
+        src: ['https://s3-us-west-1.amazonaws.com/hugodolportfolio/audio/backgroundSong.mp3'],
+        loop: true,
+        volume: 0.5,
+        html5: true,
+      });
+      this.setState({ song });
+      song.once('load', () => song.play());
+    }
   }
 
   handlePlay() {
