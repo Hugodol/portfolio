@@ -1,10 +1,13 @@
 .skills {
+  display: flex;
+  flex-direction: column;
   padding-top: 100px;
   height: 100vh;
 }
 
 .dev {
   position: relative;
+  width: 250px;
   top: 99px;
   left: 160px;
   font-size: 40px;
@@ -23,6 +26,7 @@
 
 .design {
   position: relative;
+  width: 150px;
   left: 160px;
   top: 210px;
   font-size: 40px;
