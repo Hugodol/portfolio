@@ -80,7 +80,7 @@ class Menu extends Component {
           className={`button menuMusic ${this.state.hide}`}
           onClick={() => {
             this.props.handlePlay();
-            // this.show();
+            this.show();
           }}
         />
       </div>
