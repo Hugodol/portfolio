@@ -56,3 +56,9 @@
   animation-name: split_skills;
   animation-duration: .8s;
 }
+
+@media (max-width: 430px) {
+  .menu {
+    display: none;
+  }
+}
