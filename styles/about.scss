@@ -1,7 +1,9 @@
-$black: #000000;
-$red: #ff0000;
 $yellow: #ffff00;
-$blue: #0000ff;
+
+@font-face {
+  font-family: ubuntuLight;
+  src: url('../assets/fonts/Ubuntu-L.ttf');
+}
 
 .about {
   padding-top: 100px;
@@ -11,11 +13,12 @@ $blue: #0000ff;
 }
 
 .about_text {
+  font-family: ubuntuLight;
   position: relative;
   top: 70px;
   left: 150px;
   width: 80%;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .scroll {
