@@ -13,6 +13,11 @@
   to {transform: translateX(80px);}
 }
 
+@keyframes split_skills {
+  from {transform: translate3d(-130px, 0px, 0px);}
+  to {transform: translate3d(80px, 120px, 0px);;}
+}
+
 .menu {
   position: fixed;
   z-index: 1;
@@ -42,4 +47,12 @@
   transform: translateX(80px);
   animation-name: split_apps;
   animation-duration: .7s;
+}
+
+.menuSkills {
+  z-index: 1;
+  position: fixed;
+  transform: translate3d(80px, 120px, 0px);
+  animation-name: split_skills;
+  animation-duration: .8s;
 }

@@ -3,10 +3,11 @@ import TweenLite from 'gsap';
 import '../../node_modules/gsap/ScrollToPlugin';
 import '../../styles/menu.scss';
 
-const menuButton = 'https://s3-us-west-1.amazonaws.com/hugodolportfolio/navbuttons/buttons_menu.png';
-const aboutButton = 'https://s3-us-west-1.amazonaws.com/hugodolportfolio/navbuttons/buttons_about_white.png';
-const topButton = 'https://s3-us-west-1.amazonaws.com/hugodolportfolio/navbuttons/buttons_top_yellow.png';
-const skillsButton = 'https://s3-us-west-1.amazonaws.com/hugodolportfolio/navbuttons/buttons_skills_white.png';
+const menuButton = 'https://s3-us-west-1.amazonaws.com/hugodolportfolio/navbuttons/menu.png';
+const topButton = 'https://s3-us-west-1.amazonaws.com/hugodolportfolio/navbuttons/menu_top.png';
+const aboutButton = 'https://s3-us-west-1.amazonaws.com/hugodolportfolio/navbuttons/menu_about.png';
+const appsButton = 'https://s3-us-west-1.amazonaws.com/hugodolportfolio/navbuttons/menu_apps.png';
+const skillsButton = 'https://s3-us-west-1.amazonaws.com/hugodolportfolio/navbuttons/menu_skills.png';
 
 class ProjectsButtons extends Component {
   constructor() {
@@ -18,7 +19,6 @@ class ProjectsButtons extends Component {
   }
 
   scrollTo(speed, elem) {
-    console.log('in scroll to');
     TweenLite.to(window, speed, { scrollTo: `.${elem}` });
   }
 
@@ -56,9 +56,18 @@ class ProjectsButtons extends Component {
           }}
         />
         <img
-          src={skillsButton}
+          src={appsButton}
           alt=""
           className={`button menuApps ${this.state.hide}`}
+          onClick={() => {
+            this.scrollTo(2.5, 'projects');
+            this.show();
+          }}
+        />
+        <img
+          src={skillsButton}
+          alt=""
+          className={`button menuSkills ${this.state.hide}`}
           onClick={() => {
             this.scrollTo(2.5, 'skills');
             this.show();
