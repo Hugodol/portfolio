@@ -12,6 +12,7 @@ const webpackConfig = {
   resolve: {
     extensions: ['.js', '.jsx'],
   },
+  devtool: 'inline-source-map',
 };
 
 webpackConfig.module.loaders.push({
