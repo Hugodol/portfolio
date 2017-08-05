@@ -1,4 +1,7 @@
 const path = require('path');
+const webpack = require('webpack');
+
+const devtool = process.env.DEV === 'development' ? 'inline-source-map' : 'cheap-module-source-map';
 
 const webpackConfig = {
   entry: path.resolve(__dirname, './src/index.jsx'),
@@ -9,10 +12,17 @@ const webpackConfig = {
   module: {
     loaders: [],
   },
+  plugins: [
+    new webpack.DefinePlugin({
+      'process.env': {
+        NODE_ENV: JSON.stringify('production'),
+      },
+    }),
+  ],
   resolve: {
     extensions: ['.js', '.jsx'],
   },
-  devtool: 'inline-source-map',
+  devtool: devtool,
 };
 
 webpackConfig.module.loaders.push({

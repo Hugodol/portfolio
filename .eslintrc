@@ -8,6 +8,7 @@
   "rules": {
     "no-console": 0,
     "max-len": ["error", 200],
+    "object-shorthand": 0,
     // "react/no-string-refs": 0,
     // "dot-notation": 0,
     "no-plusplus": 0,
