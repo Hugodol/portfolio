@@ -16,7 +16,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this.initMusic();
+    // this.initMusic();
   }
 
   initMusic() {

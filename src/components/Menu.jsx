@@ -74,7 +74,7 @@ class Menu extends Component {
             this.show();
           }}
         />
-        <img
+        {/* <img
           src={this.props.playUrl}
           alt=""
           className={`button menuMusic ${this.state.hide}`}
@@ -82,7 +82,7 @@ class Menu extends Component {
             this.props.handlePlay();
             this.show();
           }}
-        />
+        /> */}
       </div>
     );
   }
