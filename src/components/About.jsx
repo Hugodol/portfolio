@@ -8,6 +8,7 @@ const dividerSmall = 'https://s3-us-west-1.amazonaws.com/hugodolportfolio/divide
 const dividerXSmall = 'https://s3-us-west-1.amazonaws.com/hugodolportfolio/dividers/divider_about_x-small.png';
 const linkedin = 'https://s3-us-west-1.amazonaws.com/hugodolportfolio/linkedin.png';
 const github = 'https://s3-us-west-1.amazonaws.com/hugodolportfolio/github.png';
+const resume = 'https://s3-us-west-1.amazonaws.com/hugodolportfolio/resume.png';
 
 const About = () => (
   <div className="about" id="about">
@@ -33,6 +34,10 @@ const About = () => (
       <a href="https://github.com/Hugodol/" className="github link" target="_blank" rel="noopener noreferrer" title="Hugo Dolemieux's Github">
         <img src={github} className="link_logo" alt="" />
         <div className="link_text">github</div>
+      </a>
+      <a href="https://docs.google.com/document/d/1pc6fn0nJmps_c893hlg3bRGXwDMzXXSpF8nwRfKJD3Q/edit?usp=sharing" className="resume link" target="_blank" rel="noopener noreferrer" title="Hugo Dolemieux's Resume">
+        <img src={resume} className="link_logo" alt="" />
+        <div className="link_text">resume</div>
       </a>
     </div>
   </div>

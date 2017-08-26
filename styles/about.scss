@@ -29,7 +29,7 @@ $yellow: #ffff00;
 
 .links {
   position: relative;
-  width: 245px;
+  width: 370px;
   left: 160px;
   bottom: -95px;
 }
@@ -48,10 +48,14 @@ $yellow: #ffff00;
 .link_text {
   display: inline;
   font-size: 20px;
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 .github {
+  padding-left: 20px;
+}
+
+.resume {
   padding-left: 20px;
 }
 
